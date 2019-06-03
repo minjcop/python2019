@@ -111,12 +111,10 @@ for i in range(0, 91) :
 print(scoreIndex)
 print(countIndex)
 
-#각 점수 및 count
 for index in scoreIndex :
     print(scoreList[index])
 for index in countIndex :
     print(countList[index])
-#count
 
 t1 = np.arange(0, 91, 1)
 

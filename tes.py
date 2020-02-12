@@ -22,7 +22,7 @@ def scoreFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :
 def countFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :
     global count
     count = 0
-    a = (33 - windspeed) * 5 # 풍속
+    a = (33 - windspeed) * 5 # 풍속1f
     if winddirection > 180 :
         b = 120 - abs(360 - winddirection) # 풍향
     else :

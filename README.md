@@ -34,8 +34,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
-def scoreFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :
-
+def scoreFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :   
     a = (33 - windspeed) * 5 # 풍속
     if winddirection > 180 :
         b = 120 - abs(360 - winddirection) # 풍향
@@ -50,7 +49,6 @@ def scoreFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :
     e = 130 - abs(180 - wavedirection)
 
     return a + b + c + d + e
-
 def countFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :
     global count
     count = 0

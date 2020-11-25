@@ -30,11 +30,13 @@ https://data.kma.go.kr/data/sea/selectBuoyRltmList.do?pgmNo=52
 
 * 코드 삽입
 
+```
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
 def scoreFunc(windspeed, winddirection, waveheight, waveperiod, wavedirection) :   
+
     a = (33 - windspeed) * 5 # 풍속
     if winddirection > 180 :
         b = 120 - abs(360 - winddirection) # 풍향
@@ -131,6 +133,5 @@ plt.ylabel('score( /550)')
 plt.legend()
 plt.show()
 
-
-
+```
 
